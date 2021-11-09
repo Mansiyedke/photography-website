@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photography World</title>
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+		.p{
+			font-family: adobe hebrew;
+			font-size: 35px;
+			margin-left: 100px;
+			margin-right: 100px;
+			text-align: center;
+		}
+		body{
+			background-color:#D6EAF8;
+		}
+h1 {
+  text-shadow: 2px 2px 5px #2E86C1;
+}
+</style>
+</head>
+<body>
+	<h1><center><b>EDITORIAL PHOTOGRAPHY </b></center></h1>
+
+	<div class="w3-content w3-display-container">
+  <center><img class="mySlides" src="editorial1.jpeg" style="width:50%"></center>
+ <center><img class="mySlides" src="editorial2.jpeg" style="width:50%"></center>
+  <center><img class="mySlides" src="editorial3.jpeg" style="width:50%"></center>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="p">
+	
+
+<div>Editorial photographs are published in magazines and newspapers. They are also often taken for internet publications. This is another highly popular type of photography, with entire agencies dedicated to it.
+
+Fashion photography and sports photography can fall within this category, as can documentary photography/photojournalism, which seeks to communicate news or awareness for a social issue via photographs.</div>
+</div>
+
+
+     
+</body>
+</html>

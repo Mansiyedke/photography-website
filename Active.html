@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photography World</title>
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+		.p{
+			font-family: adobe hebrew;
+			font-size: 35px;
+			margin-left: 100px;
+			margin-right: 100px;
+			text-align: center;
+		}
+		body{
+			background-color:#D6EAF8;
+		}
+h1 {
+  text-shadow: 2px 2px 5px #2E86C1;
+}
+</style>
+</head>
+<body>
+	<h1><center><b>ACTIVE PHOTOGRAPHY </b></center></h1>
+
+	<div class="w3-content w3-display-container">
+  <center><img class="mySlides" src="active1.jpeg" style="width:50%"></center>
+  <center><img class="mySlides" src="active2.jpeg" style="width:50%"></center>
+  <center><img class="mySlides" src="active3.jpeg" style="width:50%"></center>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="p">
+	
+
+
+
+<div>This type of photography is all about taking photographs on the move — in the middle of adventures and at the heart of the action. Often the shooting conditions consist of challenging outdoor settings and call for particular photographic equipment.</div>
+
+</div>
+ <div class="container" >
+    
+    <a href="file:///C:/Users/NISHITA/Desktop/y/project.html""><button type="button" class="cancelbtn">BACK</button></a>
+  </div>
+
+     
+</body>
+</html>
